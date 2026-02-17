@@ -1,5 +1,6 @@
 import json
 import os
+from datetime import datetime
 
 class BackupManager:
     def __init__(self, bot):
@@ -8,19 +9,35 @@ class BackupManager:
 
     async def create_backup(self, guild):
         data = {
-            "name": guild.name,
+            "guild_name": guild.name,
+            "created_at": datetime.utcnow().isoformat(),
             "roles": [],
+            "categories": [],
             "channels": []
         }
 
+        # Roles
         for role in guild.roles:
+            if role.is_default():
+                continue
+
             data["roles"].append({
                 "name": role.name,
                 "permissions": role.permissions.value,
                 "color": role.color.value,
-                "position": role.position
+                "position": role.position,
+                "hoist": role.hoist,
+                "mentionable": role.mentionable
             })
 
+        # Categories
+        for category in guild.categories:
+            data["categories"].append({
+                "name": category.name,
+                "position": category.position
+            })
+
+        # Channels
         for channel in guild.channels:
             data["channels"].append({
                 "name": channel.name,
