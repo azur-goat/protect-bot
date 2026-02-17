@@ -22,7 +22,7 @@ class UltimateProtection(ProtectBot):
                     await self.load_extension(f"{folder}.{filename[:-3]}")
 
     async def on_ready(self):
-        print(f" Connecté sous : {self.user}")
+        print(f" Connect as : {self.user}")
         print(f" OWNER : {OWNER_ID}")
 
     async def on_guild_join(self, guild):
