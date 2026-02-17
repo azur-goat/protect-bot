@@ -1,6 +1,6 @@
 # Ultimate Protection Bot 🔒
 
-Version : 1.0.0 – Production-ready
+Version : 1.5.4 – Production-ready
 Langage : Python 3.11+
 Librairie : discord.py 2.3.2
 
