@@ -1,10 +1,10 @@
-Ultimate Protection Bot 🔒
+# Ultimate Protection Bot 🔒
 
 Version : 1.0.0 – Production-ready
 Langage : Python 3.11+
-Librairie : discord.py 2.x
+Librairie : discord.py 2.3.2
 
-💎 Description
+#💎 Description
 
 Ultimate Protection Bot est un bot anti-nuke / sécurité totale pour serveurs Discord.
 Il offre une protection avancée contre :
@@ -79,7 +79,7 @@ ultimate_protect_bot/
     ├── helpers.py
     └── constants.py
 
-⚙️ Installation
+#⚙️ Installation
 
 Cloner le dépôt :
 
@@ -104,10 +104,10 @@ Configurer config.py :
 OWNER_ID = 123456789012345678  # Ton ID Discord
 TOKEN = "TON_TOKEN_ICI"
 
-🚀 Lancer le bot
+#🚀 Lancer le bot
 python main.py
 
-🛡️ Fonctionnalités principales
+#🛡️ Fonctionnalités principales
 
 Protection anti-nuke totale
 
@@ -129,7 +129,7 @@ Journalisation sécurisée (logs JSON)
 
 Stockage crypté AES pour données sensibles
 
-📌 Notes importantes
+#📌 Notes importantes
 
 Le bot doit avoir la permission Administrateur
 
@@ -141,7 +141,7 @@ Ne pas partager le token : utilisez un fichier .env ou variable d’environnemen
 
 Testé sur Python 3.11+ et discord.py 2.x
 
-🔧 Développement
+#🔧 Développement
 
 Tous les modules sont modulaires, facilement modifiables ou étendables
 
@@ -154,7 +154,7 @@ Les utilitaires sont dans utils/ pour faciliter les ajouts de fonctions globales
 
 
 
-💡 Idées futures
+#💡 Idées futures
 
 Dashboard web pour monitorer les actions et alertes
 
@@ -164,6 +164,6 @@ Intelligence comportementale avancée (machine learning)
 
 Version cloud avec multi-instance pour serveurs massifs
 
-📜 Licence
+#📜 Licence
 
-MIT License – © 2026 Ultimate Protection Bot Team
+MIT License – © 2026 azur_goat
