@@ -1,0 +1,9 @@
+def save_secure_data(storage, data: str):
+    encrypted = storage.encrypt(data)
+    with open("database/encrypted/secure_store.dat", "wb") as f:
+        f.write(encrypted)
+
+def load_secure_data(storage):
+    with open("database/encrypted/secure_store.dat", "rb") as f:
+        encrypted = f.read()
+    return storage.decrypt(encrypted)
